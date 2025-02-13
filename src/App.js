@@ -5,7 +5,11 @@ import { Container, Button, Card } from "react-bootstrap";
 class QuoteGenerator extends Component {
   constructor(props) {
     super(props);
-    this.state = { frase_actual: 0, frases: ["a", "b", "c"] };
+    this.state = {
+      frase_actual: 0,
+      frases: ["a", "b", "c"],
+      autores: ["-a", "-b", "-c"],
+    };
     this.cambiar_frase = this.cambiar_frase.bind(this);
   }
 
@@ -28,7 +32,16 @@ class QuoteGenerator extends Component {
           <div className="display-4 text-dark">
             {this.state.frases[this.state.frase_actual]}
           </div>
-          <div className="text-muted mt-2">autor</div>
+          <div className="text-muted mt-2">
+            {this.state.autores[this.state.frase_actual]}
+          </div>
+          <Button
+            onClick={this.cambiar_frase}
+            variant="primary"
+            className="mt-3"
+          >
+            New Quote
+          </Button>
         </Card>
       </Container>
     );
