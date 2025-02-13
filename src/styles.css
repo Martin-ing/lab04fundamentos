@@ -1,101 +1,16 @@
-* {
-  box-sizing: border-box;
-}
-
-.titulo {
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-body {
+.App {
   font-family: sans-serif;
-  margin: 20px;
-  padding: 0;
-}
-
-h1 {
-  margin-top: 0;
-  font-size: 22px;
-}
-
-h2 {
-  margin-top: 0;
-  font-size: 20px;
-}
-
-h3 {
-  margin-top: 0;
-  font-size: 18px;
-}
-
-h4 {
-  margin-top: 0;
-  font-size: 16px;
-}
-
-h5 {
-  margin-top: 0;
-  font-size: 14px;
-}
-
-h6 {
-  margin-top: 0;
-  font-size: 12px;
-}
-
-code {
-  font-size: 1.2em;
-}
-
-ul {
-  padding-inline-start: 20px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  margin: 20px;
-  padding: 0;
-}
-
-.square {
-  background: #ece5f0;
-  border: 1px solid #999;
-  float: left;
-  font-size: 5vw;
-  font-weight: bold;
-  width: min(20vw, 70px);
-  height: min(20vw, 70px);
-  line-height: min(20vw, 70px);
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
   text-align: center;
 }
 
-.board-row:after {
-  clear: both;
-  content: "";
-  display: table;
+.button-custom {
+  background: #a31af1;
+  max-width: 200px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
-.status {
-  text-align: center;
-  margin-bottom: 10px;
-}
-.game {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.game-info {
-  margin-left: 20px;
+.text-custom {
+  color: #a31af1;
 }
